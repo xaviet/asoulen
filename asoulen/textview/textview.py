@@ -1,7 +1,7 @@
 #! /usr/bin/python3
 # coding=utf-8
 '''
-  name = asoulen.py
+  name = textview.py
 '''
 
 
@@ -9,8 +9,9 @@ import os
 
 
 def main():
-  pass
-  
+  colnums, lines=os.get_terminal_size()
+  print(colnums, lines)
+
 
 if(__name__ == '__main__'):
   main();

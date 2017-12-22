@@ -22,6 +22,31 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="asoulen.py" />
+    <Compile Include="commonlib\commonlib.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="msgqueue\msgqueue.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tcpcli\client.py" />
+    <Compile Include="tcpcli\server.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tcpcli\tcpcli.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="textview\textview.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="log.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="msgqueue\" />
+    <Folder Include="D:\code\asoulen\asoulen\commonlib\" />
+    <Folder Include="textview\" />
+    <Folder Include="tcpcli\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
